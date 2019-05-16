@@ -1,0 +1,100 @@
+.nav-outer {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 26px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.nav-inner {
+  color: #fff;
+  background-color: #222222;
+  height: 100%;
+  margin-right: 26px;
+}
+
+.nav-outer.show {
+  width: 300px;
+}
+
+.nav-outer.show .nav-button i {
+  transform: rotate(180deg);
+}
+
+.nav-button {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  border-radius: 0 5px 5px 0;
+  background-color: #dbd5af;
+  display: table;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-button i {
+  display: table-cell;
+  vertical-align: middle;
+  color: #222222;
+  padding: 10px;
+  transition: all 1s;
+}
+
+.nav-outer.show .cate {
+  padding: 10px 20px;
+  border-left: #f5d168 5px solid;
+}
+
+.cate {
+  background-color: white;
+  color: #222222;
+  font-size: 25px;
+  padding: 10px 0;
+  border-left: #f5d168 0px solid;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.selector {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.selector li {
+  background-color: #191919;
+  border-bottom: #222222 2px solid;
+  white-space: nowrap;
+  transition: all 0.5s;
+  display: flex;
+}
+
+.selector div:hover,
+.selector a:hover {
+  background-color: #272727;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.selector li:last-child {
+  border-bottom: unset;
+}
+
+.selector a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.itemName {
+  width: 100%;
+  padding: 18px 20px 14px;
+}
+
+.download {
+  padding: 18px 20px 14px;
+  border-left: 2px #292929 solid;
+  display: block;
+}

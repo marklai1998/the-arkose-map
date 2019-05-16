@@ -1,0 +1,47 @@
+.header {
+  background: #222 50% 50%;
+  color: white;
+  width: 100%;
+  background-size: cover;
+  height: 90px;
+  top: 0;
+  min-height: 90px;
+  border-bottom: #EEE8BE 10px solid;
+}
+
+.logo {
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.logo img {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+.name {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.name div:first-child {
+  font-size: 20px;
+  line-height: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.name div:last-child {
+  float: right;
+  font-size: 15px;
+}
+
+.back {
+  color: #222222;
+  background-color: #f5d168;
+  padding: 5px 10px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 25px;
+}
