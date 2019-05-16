@@ -1,0 +1,231 @@
+body {
+  font-family: 'Rajdhani', Microsoft JhengHei, sans-serif;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+h1 {
+  color: #222222;
+  display: inline-block;
+  background-color: rgb(248, 242, 199);
+  padding: 10px 50px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid rgba(159, 153, 117, 1);
+  border-right: 20px solid transparent;
+  opacity: 1;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid rgba(159, 153, 117, 1);
+  border-left: 20px solid transparent;
+  opacity: 1;
+}
+
+a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+div {
+  transition: all 0.5s;
+}
+
+img {
+  transition: all 0.5s;
+}
+
+.server,
+.about,
+.services,
+.contact {
+  padding: 70px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .server,
+  .about,
+  .services,
+  .contact {
+    text-align: center;
+  }
+}
+
+.header {
+  background: #222 50% 50%;
+  color: white;
+  width: 100%;
+  background-size: cover;
+  height: 90px;
+  top: 0;
+  min-height: 90px;
+  border-bottom: #EEE8BE 10px solid;
+}
+
+.logo {
+  padding: 10px 0;
+  display: inline-block;
+}
+
+.logo img {
+  height: 60px;
+  vertical-align: bottom;
+}
+
+.name {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+.name div:first-child {
+  font-size: 20px;
+  line-height: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.name div:last-child {
+  float: right;
+  font-size: 15px;
+}
+
+.nav-outer {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 26px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.nav-inner {
+  color: #fff;
+  background-color: #222222;
+  height: 100%;
+  margin-right: 26px;
+}
+
+.nav-outer.show {
+  width: 300px;
+}
+
+.nav-outer.show .nav-button i {
+  transform: rotate(180deg);
+}
+
+.nav-button {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  border-radius: 0 5px 5px 0;
+  background-color: #dbd5af;
+  display: table;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-button i {
+  display: table-cell;
+  vertical-align: middle;
+  color: #222222;
+  padding: 10px;
+  transition: all 1s;
+}
+
+.nav-outer.show .cate {
+  padding: 10px 20px;
+  border-left: #f5d168 5px solid;
+}
+
+.cate {
+  background-color: white;
+  color: #222222;
+  font-size: 25px;
+  padding: 10px 0;
+  border-left: #f5d168 0px solid;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.selector {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.selector li {
+  padding: 15px 20px;
+  background-color: #191919;
+  border-bottom: #222222 2px solid;
+  white-space: nowrap;
+  transition: all 0.5s;
+}
+
+.selector li:hover {
+  background-color: #272727;
+  cursor: pointer;
+}
+
+.selector li:last-child {
+  border-bottom: unset;
+}
+
+.selector a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.mainFrame {
+  width: 100%;
+  position: absolute;
+  height: calc(100% - 90px);
+  border: none;
+  z-index: -1;
+}
+
+.mainFrameBG {
+  background-color: #272727;
+  width: 100%;
+  position: absolute;
+  height: calc(100% - 90px);
+}
+
+.mainFrameBGInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #dbd5af;
+}
+
+.back {
+  color: #222222;
+  background-color: #f5d168;
+  padding: 5px 10px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 25px;
+}
