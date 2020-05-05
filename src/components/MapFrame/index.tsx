@@ -8,12 +8,7 @@ type Props = {
 
 export const MapFrame = ({ mapId }: Props) =>
   mapId ? (
-    <Iframe
-      title='map'
-      id='mainFrame'
-      className='mainFrame'
-      src={`https://dynmap.thearkose.com/${mapId}/`}
-    />
+    <Iframe src={`https://dynmap.thearkose.com/${mapId}/`} />
   ) : (
     <MessageWrapper>
       <Message>

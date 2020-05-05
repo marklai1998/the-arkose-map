@@ -26,7 +26,7 @@ export const Selector = ({ setMapId }: Props) => {
       </Btn>
       <Nav>
         <CateTitle>1.12</CateTitle>
-        <Cate className='selector'>
+        <Cate>
           <Item
             name='火柴人小品休閒伺服器'
             changeMap={onChangeMap}
@@ -41,11 +41,11 @@ export const Selector = ({ setMapId }: Props) => {
           />
         </Cate>
         <CateTitle>1.13</CateTitle>
-        <Cate className='selector'>
+        <Cate>
           <Item name='Project TheArkose' changeMap={onChangeMap} mapId='92' />
         </Cate>
         <CateTitle>1.14</CateTitle>
-        <Cate className='selector'>
+        <Cate>
           <Item name='Project TheArkose' changeMap={onChangeMap} mapId='93' />
         </Cate>
       </Nav>

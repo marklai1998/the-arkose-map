@@ -7,7 +7,7 @@ export const Header = () => (
     <div className='container'>
       <LogoWrapper>
         <Logo src={logo} alt='logo' />
-        <Name className='name'>
+        <Name>
           <div>The Arkose</div>
           <div>Online Map</div>
         </Name>

@@ -24,7 +24,6 @@ export const Item = ({
       <Name onClick={handleMapClick}>{name}</Name>
       {hasDownload && (
         <Download
-          className='download'
           href={`https://archive.thearkose.com/${mapId}.zip`}
           target='_blank'
           rel='noopener noreferrer'
