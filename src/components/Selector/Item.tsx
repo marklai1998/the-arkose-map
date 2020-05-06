@@ -28,7 +28,7 @@ export const Item = ({
           target='_blank'
           rel='noopener noreferrer'
         >
-          <i className='far fa-file-archive ' />
+          <i className='far fa-file-archive' />
         </Download>
       )}
     </Wrapper>

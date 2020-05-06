@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 import { Header } from './components/Header'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import { Selector } from './components/Selector'
-import { MapFrame } from './components/MapFrame'
+import { Empty } from './components/Empty'
 
 export const App = () => {
   const [mapId, setMapId] = useState<string | null>(null)
@@ -12,7 +12,11 @@ export const App = () => {
       <GlobalStyle />
       <Header />
       <Selector setMapId={setMapId} />
-      <MapFrame mapId={mapId} />
+      {mapId ? (
+        <Iframe src={`https://dynmap.thearkose.com/${mapId}/`} />
+      ) : (
+        <Empty />
+      )}
     </React.Fragment>
   )
 }
@@ -42,4 +46,12 @@ const GlobalStyle = createGlobalStyle`
   img {
     transition: all 0.5s;
   }
+`
+
+const Iframe = styled.iframe`
+  width: 100%;
+  position: absolute;
+  height: calc(100% - 90px);
+  border: none;
+  z-index: -1;
 `
