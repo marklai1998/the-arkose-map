@@ -42,11 +42,11 @@ export const Selector = ({ setMapId }: Props) => {
         </Cate>
         <CateTitle>1.13</CateTitle>
         <Cate>
-          <Item name='Project TheArkose' changeMap={onChangeMap} mapId='92' />
+          <Item name='Project TheArkose' changeMap={onChangeMap} mapId='92' hasDownload/>
         </Cate>
         <CateTitle>1.14</CateTitle>
         <Cate>
-          <Item name='Project TheArkose' changeMap={onChangeMap} mapId='93' />
+          <Item name='Project TheArkose' changeMap={onChangeMap} mapId='93' hasDownload/>
         </Cate>
       </Nav>
     </Wrapper>
